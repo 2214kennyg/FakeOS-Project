@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url(https://images2.alphacoders.com/941/941898.jpg);
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.apps {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.apps__icon {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+footer {
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  bottom: 0px;
+}
+
+.openedMenu {
+  display: flex;
+  margin-top: auto;
+}
+.openedMenu__menu {
+  background-color: white;
+  max-width: 300px;
+  height: 500px;
+}
+
+.openedApp {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.openedApp__notepad {
+  height: 100px;
+  width: 100px;
+}
+
+figure {
+  max-width: 44px;
+  margin: 0;
+}
+
+figcaption {
+  color: white;
+  max-height: 44px;
+  max-width: 44px;
+}
