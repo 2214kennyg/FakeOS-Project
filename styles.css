@@ -29,29 +29,65 @@ section {
 
 footer {
   display: flex;
-  align-content: flex-end;
   align-items: flex-end;
   bottom: 0px;
+  justify-content: space-between;
+  background-color: rgb(66, 66, 255);
 }
 
 .openedMenu {
+  position: absolute;
+  bottom: 0px;
   display: flex;
   margin-top: auto;
-}
-.openedMenu__menu {
-  background-color: white;
-  max-width: 300px;
+  flex-direction: column;
+  background-color: rgb(188, 236, 255);
+  width: 300px;
   height: 500px;
 }
 
+ul {
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+li {
+  padding: 5px 0px 5px 0px;
+  border: solid black 2px;
+  width: 150px;
+  height: 30px;
+}
+
+h1 {
+  font-size: 1.5cm;
+}
+
 .openedApp {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  position: absolute;
+  align-self: center;
+  top: 200px;
 }
 .openedApp__notepad {
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border: 2px black solid;
+}
+.openedApp__internet {
+  height: 400px;
+  width: 650px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.openedApp__placeKitten {
+  height: 400px;
+  width: 500px;
+  background-image: url(https://placekitten.com/500/400);
 }
 
 figure {
@@ -63,4 +99,14 @@ figcaption {
   color: white;
   max-height: 44px;
   max-width: 44px;
+}
+
+#dateTime {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 25px;
+  width: 60px;
+  background-color: rgb(99, 99, 250);
+  color: white;
 }
