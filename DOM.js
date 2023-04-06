@@ -74,15 +74,25 @@ const openInternetExplorer = () => {
         title.appendChild(document.createTextNode("Internet"));
         const form = document.createElement("form");
         form.appendChild(document.createElement("input"));
-        form.addEventListener("submit", (event) => {
+        const submitBtn = document.createElement("button");
+        submitBtn.appendChild(document.createTextNode("Submit"));
+        const formSubmission = (event) => {
             event.preventDefault();
             const p = document.createElement("p");
             const message = document.createTextNode("This is the internet");
-            p.appendChild(message);
-            document.querySelector("form").appendChild(p);
-        });
+            const theInternet = document.querySelectorAll("p");
+            if (theInternet.length === 3) {
+                theInternet.parentNode.removeChild;
+            } else {
+                p.appendChild(message);
+                document.querySelector("form").appendChild(p);
+            }
+        };
+        submitBtn.addEventListener("click", formSubmission);
+        form.addEventListener("submit", formSubmission);
         newInternet.appendChild(title);
         newInternet.appendChild(form);
+        newInternet.appendChild(submitBtn);
         section.appendChild(newInternet);
     }
 };

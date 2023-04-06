@@ -83,6 +83,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px black solid;
 }
 .openedApp__placeKitten {
   height: 400px;
