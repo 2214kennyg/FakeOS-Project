@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fake OS</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./DOM.js" defer type="module"></script>
+    </head>
+    <body>
+        <!-- <img
+            src="https://images2.alphacoders.com/941/941898.jpg"
+            alt=""
+            class="background"
+        /> -->
+        <section>
+            <div class="apps">
+                <figure>
+                    <img
+                        src="./Icons/notepad.png"
+                        alt=""
+                        class="apps__icon"
+                        id="notepad"
+                    />
+                    <figcaption>Notepad</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="./Icons/internet-explorer.png"
+                        alt=""
+                        class="apps__icon"
+                        id="internet-explorer"
+                    />
+                    <figcaption>Internet Explorer</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="./Icons/placekitten.jpg"
+                        alt=""
+                        class="apps__icon"
+                        id="place-kitten"
+                    />
+                    <figcaption>Place kitten</figcaption>
+                </figure>
+            </div>
+            <div class="openedApp openedApp__notepad" style="display: none">
+                <div class="appTop">
+                    Notepad
+                    <img
+                        src="./Icons/icons8-x-button-24.png"
+                        alt=""
+                        class="closeBtn"
+                        id="closeBtnNotepad"
+                    />
+                </div>
+                <textarea name="" id="" cols="55" rows="24 "></textarea>
+            </div>
+            <div class="openedApp openedApp__internet" style="display: none">
+                <div class="appTop">
+                    Internet
+                    <img
+                        src="./Icons/icons8-x-button-24.png"
+                        alt=""
+                        class="closeBtn"
+                        id="closeBtnInternet"
+                    />
+                </div>
+                <h1>Internet</h1>
+                <form id="form">
+                    <input type="text" />
+                    <button id="submitBtn">Submit</button>
+                </form>
+            </div>
+            <div class="openedApp openedApp__placeKitten" style="display: none">
+                <div class="appTop">
+                    Place Kitten
+                    <img
+                        src="./Icons/icons8-x-button-24.png"
+                        alt=""
+                        class="closeBtn"
+                        id="closeBtnPlaceKitten"
+                    />
+                </div>
+            </div>
+            <div class="openedMenu" style="display: none">
+                <ul>
+                    <li>
+                        <img
+                            src="./Icons/notepad.png"
+                            alt=""
+                            class="apps__icon"
+                        />
+                        Notepad
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/internet-explorer.png"
+                            alt=""
+                            class="apps__icon"
+                        />
+                        Internet Explorer
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/placekitten.jpg"
+                            alt=""
+                            class="apps__icon"
+                        />
+                        Place Kitten
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-file-explorer-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />File Explorer
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-settings-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Settings
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-downloads-folder-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Downloads
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-documents-folder-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Documents
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-important-mail-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Mail
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-visual-studio-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Visual Studio
+                    </li>
+                    <li>
+                        <img
+                            src="./Icons/icons8-console-48.png"
+                            alt=""
+                            class="apps__icon"
+                        />Console
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <img
+                src="./Icons/Windows XP Start Menu Button.jpg"
+                alt=""
+                id="menu"
+            />
+            <div id="dateTime"></div>
+        </footer>
+    </body>
+</html>
